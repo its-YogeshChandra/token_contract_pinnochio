@@ -4,7 +4,13 @@ version = "0.1.0"
 edition = "2024"
 
 [lib]
-crate-type = ["cdylib"]
+crate-type = ["lib", "cdylib"]
 
 
 [dependencies]
+borsh = {version =  "1.6.0", features = ["derive"]}
+pinocchio = "0.10.2"
+pinocchio-system = "0.5.0"
+solana-program = "3.0.0"
+solana-program-log = "1.1.0"
+spl-token = "9.0.0"
